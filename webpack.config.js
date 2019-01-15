@@ -1,12 +1,9 @@
 module.exports = {
-  entry: [
-    './src/index.js',
-    './src/index.css'
-  ],
+  entry: ["./src/index.js", "./src/index.css"],
   output: {
     path: __dirname,
-    publicPath: '/',
-    filename: 'bundle.js'
+    publicPath: "/",
+    filename: "bundle.js"
   },
   module: {
     rules: [
@@ -29,8 +26,7 @@ module.exports = {
               modules: true,
               importLoaders: 1,
               localIdentName: "[name]_[local]_[hash:base64]",
-              sourceMap: true,
-              minimize: true
+              sourceMap: true
             }
           }
         ]
